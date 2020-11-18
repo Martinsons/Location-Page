@@ -33,16 +33,19 @@ function getDayPeriod(){
     let day = new Date();
 
     const timeHr = day.getHours();
-    const timeMin = day.getMinutes();
+    
     
     
 
-    if(timeMin >= 3){
+    if(timeHr <= 4){
         iconStyle.innerHTML = '<i class="fas fa-cloud-sun"></i>';
-    } else if (timeMin >= 2){
+        daySection.innerHTML = 'Good Morning';
+    } else if (timeHr <= 12){
         iconStyle.innerHTML = '<i class="far fa-sun"></i>';
-    } else if (timeMin >= 1){
+        daySection.innerHTML = 'Good Evening';
+    } else if (timeHr <= 18) {
         iconStyle.innerHTML = '<i class="fas fa-moon"></i>';
+        daySection.innerHTML = 'Good Night';
     }
 }
 
