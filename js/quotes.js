@@ -34,3 +34,4 @@ function getQuote(){
 quoteBtn.addEventListener('click', function(){
     getQuote();
 })
+
