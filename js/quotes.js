@@ -1,4 +1,8 @@
-const quotes = ({
+const quoteText = document.querySelector('#quote');
+const authorText = document.querySelector('#author');
+const quoteBtn = document.querySelector('#quote-btn');
+
+const quotes = [{
     quote: '“Be yourself; everyone else is already taken.”',
     author: 'Oscar Wilde'
 }, {
@@ -13,11 +17,20 @@ const quotes = ({
 }, {
     quote: "“In three words I can sum up everything I've learned about life: it goes on.”",
     author: 'Robert Frost'
-});
+}];
 
 
-const quote = document.querySelector('#quote');
-const author = document.querySelector('#author');
+function getRandom(){
+    return Math.floor(Math.random() * quotes.length);
+}
 
-quote.innerHTML = quotes.quote;
-author.innerHTML = quotes.author;
+function getQuote(){
+    let x = quotes[getRandom()];
+
+    quoteText.innerHTML = x.quote;
+    authorText.innerHTML = x.author;
+}
+
+quoteBtn.addEventListener('click', function(){
+    getQuote();
+})
