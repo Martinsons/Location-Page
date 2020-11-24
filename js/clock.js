@@ -33,7 +33,7 @@ function getDayPeriod(){
     let day = new Date();
 
     const timeHr = day.getHours();
-    const timeMin = day.getMinutes();
+    
     
     
 
@@ -45,6 +45,7 @@ function getDayPeriod(){
         iconStyle.innerHTML = '<i class="fas fa-moon"></i>';
     } else if(timeHr > 0 && timeHr < 4){
         iconStyle.innerHTML = '<i class="fas fa-moon"></i>';
+        daySection.innerHTML = 'Good Night';
     }
 
     

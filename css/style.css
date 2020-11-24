@@ -1,0 +1,46 @@
+.quote {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    max-width: 400px;
+    border: 1px solid;
+}
+
+.quote-btn {
+    margin-left: 1rem;
+}
+
+#quote-btn {
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+
+#icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+#day-section {
+    margin-right: 1rem;
+}
+
+.time {
+    display: flex;
+    margin: 1rem;
+    font-size: 4rem;
+}
+
+.margin {
+    margin-right: 2rem;
+}
