@@ -37,13 +37,19 @@ function getDayPeriod(){
     
     
 
-    if(timeMin >= 3){
+    if(timeHr > 4 && timeHr < 12){
         iconStyle.innerHTML = '<i class="fas fa-cloud-sun"></i>';
-    } else if (timeMin >= 2){
+    } else if (timeHr > 12 && timeHr < 18){
         iconStyle.innerHTML = '<i class="far fa-sun"></i>';
-    } else if (timeMin >= 1){
+    } else if (timeHr > 18 && timeHr >= 23){
+        iconStyle.innerHTML = '<i class="fas fa-moon"></i>';
+    } else if(timeHr > 0 && timeHr < 4){
         iconStyle.innerHTML = '<i class="fas fa-moon"></i>';
     }
+
+    
 }
+
+
 
 setInterval(getDayPeriod, 1000);
