@@ -39,10 +39,13 @@ function getDayPeriod(){
 
     if(timeHr > 4 && timeHr < 12){
         iconStyle.innerHTML = '<i class="fas fa-cloud-sun"></i>';
+        daySection.innerHTML = 'Good Morning';
     } else if (timeHr > 12 && timeHr < 18){
         iconStyle.innerHTML = '<i class="far fa-sun"></i>';
+        daySection.innerHTML = 'Good Evening';
     } else if (timeHr > 18 && timeHr >= 23){
         iconStyle.innerHTML = '<i class="fas fa-moon"></i>';
+        daySection.innerHTML = 'Good Night';
     } else if(timeHr > 0 && timeHr < 4){
         iconStyle.innerHTML = '<i class="fas fa-moon"></i>';
         daySection.innerHTML = 'Good Night';
