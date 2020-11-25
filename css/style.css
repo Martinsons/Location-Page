@@ -44,3 +44,7 @@
 .margin {
     margin-right: 2rem;
 }
+
+.uppercase {
+    text-transform: uppercase;
+}

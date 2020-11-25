@@ -9,7 +9,11 @@ let day = new Date();
 // TIMEZONE
 const timeZone = document.querySelector('#timezone');
 
-timeZone.innerText = Intl.DateTimeFormat().resolvedOptions().timeZone;
+const paragr = document.createElement('p');
+
+paragr.innerHTML = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+timeZone.appendChild(paragr);
 
 
 
