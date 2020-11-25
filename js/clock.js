@@ -43,7 +43,7 @@ function getDayPeriod(){
     } else if (timeHr > 12 && timeHr < 18){
         iconStyle.innerHTML = '<i class="far fa-sun"></i>';
         daySection.innerHTML = 'Good Evening';
-    } else if (timeHr > 18 && timeHr >= 23){
+    } else if (timeHr > 18 && timeHr < 23){
         iconStyle.innerHTML = '<i class="fas fa-moon"></i>';
         daySection.innerHTML = 'Good Night';
     } else if(timeHr > 0 && timeHr < 4){
@@ -53,7 +53,7 @@ function getDayPeriod(){
 
     console.log(timeHr > 4 && timeHr < 12)
     console.log(timeHr > 12 && timeHr < 18)
-    console.log(timeHr > 18 && timeHr > 23)
+    console.log(timeHr > 18 && timeHr < 23)
     console.log(timeHr > 0 && timeHr < 4)
 
 }
