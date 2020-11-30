@@ -87,3 +87,25 @@ function weekDay(){
 weekDay();
 
 
+function getNumberOfWeek() {
+    const today = new Date();
+    const firstDayOfYear = new Date(today.getFullYear(), 0, 1);
+    const pastDaysOfYear = (today - firstDayOfYear) / 86400000;
+    return Math.ceil((pastDaysOfYear + firstDayOfYear.getDay() + 1) / 7);
+}
+
+function weekNr() {
+    let x = getNumberOfWeek();
+    const para = document.createElement('p');
+
+    para.innerHTML = x;
+
+    weekNumber.appendChild(para);
+}
+
+weekNr();
+
+
+
+
+  
