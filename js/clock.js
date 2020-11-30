@@ -51,16 +51,12 @@ function getDayPeriod(){
         daySection.innerHTML = 'Good Night';
     }
 
-    console.log(timeHr > 4 && timeHr < 12)
-    console.log(timeHr > 12 && timeHr < 18)
-    console.log(timeHr > 18 && timeHr < 23)
-    console.log(timeHr > 0 && timeHr < 4)
 
 }
 
-getDayPeriod();
 
-// setInterval(getDayPeriod, 1000);
+
+setInterval(getDayPeriod, 1000);
 
 
 function weekDay(){
