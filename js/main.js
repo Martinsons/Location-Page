@@ -19,6 +19,14 @@ paragr.innerHTML = Intl.DateTimeFormat().resolvedOptions().timeZone;
 timeZone.appendChild(paragr);
 
 
-clockBtn.addEventListener('click', function(){
-    console.log('Hello');
-})
+function hideSection(){
+    if(infoSection.style.display === 'none'){
+        infoSection.style.display = 'block';
+        quotesSection.style.display = 'none';
+        clockBtn.innerText = 'Less';
+    } else {
+        infoSection.style.display = 'none';
+        quotesSection.style.display = 'block';
+        clockBtn.innerText = 'More';
+    }
+}
